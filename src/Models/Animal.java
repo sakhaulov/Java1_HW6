@@ -10,9 +10,9 @@ public abstract class Animal {
         count++;
     }
 
-    protected abstract String run(int distance);
+    public abstract String run(int distance);
 
-    protected abstract String swim(int distance);
+    public abstract String swim(int distance);
 
     public static int getCount() {
         return count;

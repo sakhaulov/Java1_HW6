@@ -7,11 +7,10 @@ public class Main {
         Dog bobik = new Dog("Бобик");
         Cat vasya = new Cat("Вася");
 
+        //Тестируем счётчики количества животных
         System.out.println("Количество животных: "+Animal.getCount());
         System.out.println("Количество кошек: "+Cat.getCount());
         System.out.println("Количество собак: "+Dog.getCount());
-
-        Animal.getCount();
 
         //Тестируем кота
         System.out.println("\n"+vasya.run(200)+"\n");
@@ -26,6 +25,7 @@ public class Main {
                 +sharik.swim(10)+"\n");
         System.out.println("Бросили пса "+sharik.getName()+" в воду: \n"
                 +sharik.swim(200));
+
     }
 
 }
