@@ -3,28 +3,20 @@ import Models.Animal;
 public class Main {
 
     public static void main(String[] args) {
-        Dog sharik = new Dog("Шарик");
-        Dog bobik = new Dog("Бобик");
-        Cat vasya = new Cat("Вася");
+        Animal[] animals = new Animal[3];
 
-        //Тестируем счётчики количества животных
-        System.out.println("Количество животных: "+Animal.getCount());
-        System.out.println("Количество кошек: "+Cat.getCount());
-        System.out.println("Количество собак: "+Dog.getCount());
 
-        //Тестируем кота
-        System.out.println("\n"+vasya.run(200)+"\n");
-        System.out.println(vasya.run(300)+"\n");
-        System.out.println("Бросили кота "+vasya.getName()+" в воду: \n"
-                           +vasya.swim(200)+"\n");
+        animals[0] = new Dog("Шарик", 500, 10);
+        animals[1] = new Dog("Бобик", 500, 10);
+        animals[2] = new Cat("Вася", 200, 0);
 
-        //Тестируем пса
-        System.out.println(sharik.run(200)+"\n");
-        System.out.println(sharik.run(600)+"\n");
-        System.out.println("Бросили пса "+sharik.getName()+" в воду: \n"
-                +sharik.swim(10)+"\n");
-        System.out.println("Бросили пса "+sharik.getName()+" в воду: \n"
-                +sharik.swim(200));
+        for (int i = 0; i < animals.length; i++) {
+            System.out.println("\n"+animals[i].run(200)+"\n");
+            System.out.println(animals[i].run(300)+"\n");
+            System.out.println(animals[i].run(600)+"\n");
+            System.out.println(animals[i].swim(10)+"\n");
+            System.out.println(animals[i].swim(20));
+        }
 
     }
 
