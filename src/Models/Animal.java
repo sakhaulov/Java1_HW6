@@ -8,10 +8,8 @@ public abstract class Animal {
     private static int count;
 
 
-    public Animal(String name, int run_limit, int swim_limit){
+    public Animal(String name){
         this.name = name;
-        this.run_limit = run_limit;
-        this.swim_limit = swim_limit;
         count++;
     }
 

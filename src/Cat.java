@@ -4,8 +4,9 @@ public class Cat extends Animal {
 
     private static int count;
 
-    public Cat(String name, int run_limit, int swim_limit) {
-        super(name, run_limit, swim_limit);
+    public Cat(String name) {
+        super(name);
+        this.run_limit = 200;
         count++;
         System.out.println("Появился кот "+this.name);
     }
